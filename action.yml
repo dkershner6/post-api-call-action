@@ -2,8 +2,8 @@ name: 'POST API Call Action'
 description: 'Send a POST request'
 author: 'Derek Kershner'
 branding:
-  icon: 'bell'  
-  color: 'yellow'
+  icon: 'phone'  
+  color: 'orange'
 inputs:
   url:
     description: 'URL to send post request to'
