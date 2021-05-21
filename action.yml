@@ -12,6 +12,10 @@ inputs:
     description: 'JSON string of data to pass into request'
     default: '{}'
     required: false
+  headers:
+    description: 'JSON string of headers to pass into request'
+    default: '{}'
+    required: false
 runs:
   using: 'node12'
   main: 'lib/main.js'
