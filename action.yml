@@ -1,10 +1,17 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'POST API Call Action'
+description: 'Send a POST request'
+author: 'Derek Kershner'
+branding:
+  icon: 'bell'  
+  color: 'yellow'
 inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
+  url:
+    description: 'URL to send post request to'
+    required: true
+  data:
+    description: 'JSON string of data to pass into request'
+    default: '{}'
+    required: false
 runs:
   using: 'node12'
-  main: 'dist/index.js'
+  main: 'lib/main.js'
