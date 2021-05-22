@@ -1,6 +1,6 @@
 {
   "name": "post-api-call-action",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "description": "Send a POST request action",
   "main": "lib/main.js",
