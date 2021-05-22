@@ -12,7 +12,7 @@ const parseJsonSafely = (jsonString: string): any => {
 async function run(): Promise<void> {
     try {
         const url: string = getInput('url');
-        info('Sending POST request...');
+        info(`Sending POST request to ${url}`);
         const data = parseJsonSafely(getInput('data'));
         const headers = parseJsonSafely(getInput('headers'));
         await axios.post(url, data, {

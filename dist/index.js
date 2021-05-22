@@ -33,7 +33,7 @@ function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const url = core_1.getInput('url');
-            core_1.info('Sending POST request...');
+            core_1.info(`Sending POST request to ${url}`);
             const data = parseJsonSafely(core_1.getInput('data'));
             const headers = parseJsonSafely(core_1.getInput('headers'));
             yield axios_1.default.post(url, data, {
