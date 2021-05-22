@@ -23,8 +23,8 @@ Optional: JSON string of headers to pass into request. Default `"{}"`.
 uses: dkershner6/post-api-call-action@v1
 with:
   url: ${{ secrets.API_URL }}
-  data: "{'command': 'publish'}"
-  headers: "{'Authorization': '${{ secrets.API_KEY }}'}"
+  data: "{\"command\": \"publish\"}"
+  headers: "{\"Authorization\": \"Bearer ${{ secrets.API_KEY }}\"}"
 ```
 
 

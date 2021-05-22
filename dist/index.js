@@ -21,31 +21,47 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const core_1 = __nccwpck_require__(2186);
 const axios_1 = __importDefault(__nccwpck_require__(6545));
-const parseJsonSafely = (jsonString) => {
-    try {
-        return JSON.parse(jsonString);
-    }
-    catch (error) {
-        return {};
-    }
-};
+const parseJsonSafely_1 = __nccwpck_require__(8521);
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const url = core_1.getInput('url');
             core_1.info(`Sending POST request to ${url}`);
-            const data = parseJsonSafely(core_1.getInput('data'));
-            const headers = parseJsonSafely(core_1.getInput('headers'));
+            const data = parseJsonSafely_1.parseJsonSafely(core_1.getInput('data'));
+            const headers = parseJsonSafely_1.parseJsonSafely(core_1.getInput('headers'));
             yield axios_1.default.post(url, data, {
                 headers,
             });
         }
-        catch (error) {
-            core_1.setFailed(error.message);
+        catch (err) {
+            core_1.error(err.message);
+            core_1.setFailed(err.message);
         }
     });
 }
 run();
+
+
+/***/ }),
+
+/***/ 8521:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.parseJsonSafely = void 0;
+const core_1 = __nccwpck_require__(2186);
+const parseJsonSafely = (jsonString) => {
+    try {
+        return JSON.parse(jsonString);
+    }
+    catch (err) {
+        core_1.error(`Parsing error: ${jsonString} - ${err.message}`);
+        return {};
+    }
+};
+exports.parseJsonSafely = parseJsonSafely;
 
 
 /***/ }),

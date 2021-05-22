@@ -1,13 +1,6 @@
-import { getInput, info, setFailed } from '@actions/core';
+import { getInput, info, error, setFailed } from '@actions/core';
 import axios from 'axios';
-
-const parseJsonSafely = (jsonString: string): any => {
-    try {
-        return JSON.parse(jsonString);
-    } catch (error) {
-        return {};
-    }
-};
+import { parseJsonSafely } from './parseJsonSafely';
 
 async function run(): Promise<void> {
     try {
@@ -18,8 +11,9 @@ async function run(): Promise<void> {
         await axios.post(url, data, {
             headers,
         });
-    } catch (error) {
-        setFailed(error.message);
+    } catch (err) {
+        error(err.message);
+        setFailed(err.message);
     }
 }
 
