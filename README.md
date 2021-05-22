@@ -20,7 +20,7 @@ Optional: JSON string of headers to pass into request. Default `"{}"`.
 ## Example usage
 
 ```yaml
-uses: dkershner6/post-api-call-action@v1.0.0
+uses: dkershner6/post-api-call-action@v1
 with:
   url: ${{ secrets.API_URL }}
   data: "{'command': 'publish'}"
