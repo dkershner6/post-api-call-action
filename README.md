@@ -1,6 +1,6 @@
 # webhook-action
 
-GitHub Action that sends a POST request of any kind.
+GitHub Action that sends a POST request of any kind. This is a thin wrapper around Axios.post.
 
 ## Inputs
 
@@ -16,6 +16,10 @@ Optional: JSON string of data to pass into request. Default `"{}"`.
 
 Optional: JSON string of headers to pass into request. Default `"{}"`.
 
+### `params`
+
+Optional: JSON string of query parameters to pass into request. Default `"{}"`.
+
 
 ## Example usage
 
@@ -25,6 +29,7 @@ with:
   url: ${{ secrets.API_URL }}
   data: "{\"command\": \"publish\"}"
   headers: "{\"Authorization\": \"Bearer ${{ secrets.API_KEY }}\"}"
+  params: "{\"content\": \"Test Content\"}"
 ```
 
 
