@@ -24,7 +24,7 @@ Optional: JSON string of query parameters to pass into request. Default `"{}"`.
 ## Example usage
 
 ```yaml
-uses: dkershner6/post-api-call-action@v1
+uses: dkershner6/post-api-call-action@v2
 with:
   url: ${{ secrets.API_URL }}
   data: "{\"command\": \"publish\"}"
@@ -35,4 +35,11 @@ with:
 
 ## Contributing
 
-Feel free to open issues or submit PRs.
+All contributions are welcome, please open an issue or pull request.
+
+To use this repository:
+1. `npm i -g pnpm` (if don't have pnpm installed)
+2. `pnpm i`
+3. `npx projen` (this will ensure everything is setup correctly, and you can run this command at any time)
+4. Good to make your changes!
+5. You can run `npx projen build` at any time to build the project.

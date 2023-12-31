@@ -1,11 +1,11 @@
-import { parseJsonSafely } from './parseJsonSafely';
+import { parseJsonSafely } from "./parseJsonSafely";
 
-it('Should parse example strings correctly', () => {
-    const testString = "{\"Authorization\": \"Bearer testsdtestdgsdsfgs\"}";
+it("Should parse example strings correctly", () => {
+    const testString = '{"Authorization": "Bearer testsdtestdgsdsfgs"}';
 
     const result = parseJsonSafely(testString);
 
     expect(result).toEqual({
-        Authorization: 'Bearer testsdtestdgsdsfgs',
+        Authorization: "Bearer testsdtestdgsdsfgs",
     });
 });
