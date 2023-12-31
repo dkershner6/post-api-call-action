@@ -1,4 +1,4 @@
-import { error } from '@actions/core';
+import { error } from "@actions/core";
 
 export const parseJsonSafely = (jsonString: string): unknown => {
     try {
@@ -6,8 +6,8 @@ export const parseJsonSafely = (jsonString: string): unknown => {
     } catch (err) {
         error(
             `Parsing error: ${jsonString} - ${
-                (err as Error)?.message ?? 'Unknown error while parsing JSON'
-            }`
+                (err as Error)?.message ?? "Unknown error while parsing JSON"
+            }`,
         );
         return {};
     }
