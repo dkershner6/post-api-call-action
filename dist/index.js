@@ -11,7 +11,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const core_1 = __nccwpck_require__(9093);
-const axios_1 = __importDefault(__nccwpck_require__(2940));
+const axios_1 = __importDefault(__nccwpck_require__(2153));
 const parseJsonSafely_1 = __nccwpck_require__(7516);
 async function run() {
     try {
@@ -35,7 +35,7 @@ async function run() {
     }
 }
 void run();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBQSx3Q0FBaUU7QUFDakUsa0RBQTRDO0FBQzVDLHVEQUFvRDtBQUVwRCxLQUFLLFVBQVUsR0FBRztJQUNkLElBQUksQ0FBQztRQUNELE1BQU0sR0FBRyxHQUFXLElBQUEsZUFBUSxFQUFDLEtBQUssQ0FBQyxDQUFDO1FBQ3BDLE1BQU0sSUFBSSxHQUFHLElBQUEsaUNBQWUsRUFBQyxJQUFBLGVBQVEsRUFBQyxNQUFNLENBQUMsQ0FBQyxDQUFDO1FBQy9DLE1BQU0sT0FBTyxHQUFHLElBQUEsaUNBQWUsRUFBQyxJQUFBLGVBQVEsRUFBQyxTQUFTLENBQUMsQ0FBaUIsQ0FBQztRQUNyRSxNQUFNLE1BQU0sR0FBRyxJQUFBLGlDQUFlLEVBQUMsSUFBQSxlQUFRLEVBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQztRQUVuRCxJQUFBLFdBQUksRUFBQywyQkFBMkIsR0FBRyxFQUFFLENBQUMsQ0FBQztRQUN2QyxNQUFNLGVBQUssQ0FBQyxJQUFJLENBQUMsR0FBRyxFQUFFLElBQUksRUFBRTtZQUN4QixPQUFPO1lBQ1AsTUFBTTtTQUNULENBQUMsQ0FBQztJQUNQLENBQUM7SUFBQyxPQUFPLEdBQUcsRUFBRSxDQUFDO1FBQ1gsSUFBSSxHQUFHLFlBQVksS0FBSyxFQUFFLENBQUM7WUFDdkIsSUFBQSxZQUFLLEVBQUMsR0FBRyxDQUFDLE9BQU8sQ0FBQyxDQUFDO1lBQ25CLElBQUEsZ0JBQVMsRUFBQyxHQUFHLENBQUMsT0FBTyxDQUFDLENBQUM7WUFDdkIsT0FBTztRQUNYLENBQUM7UUFFRCxJQUFBLGdCQUFTLEVBQUMsMEJBQTBCLENBQUMsQ0FBQztJQUMxQyxDQUFDO0FBQ0wsQ0FBQztBQUVELEtBQUssR0FBRyxFQUFFLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBnZXRJbnB1dCwgaW5mbywgZXJyb3IsIHNldEZhaWxlZCB9IGZyb20gXCJAYWN0aW9ucy9jb3JlXCI7XG5pbXBvcnQgYXhpb3MsIHsgQXhpb3NIZWFkZXJzIH0gZnJvbSBcImF4aW9zXCI7XG5pbXBvcnQgeyBwYXJzZUpzb25TYWZlbHkgfSBmcm9tIFwiLi9wYXJzZUpzb25TYWZlbHlcIjtcblxuYXN5bmMgZnVuY3Rpb24gcnVuKCk6IFByb21pc2U8dm9pZD4ge1xuICAgIHRyeSB7XG4gICAgICAgIGNvbnN0IHVybDogc3RyaW5nID0gZ2V0SW5wdXQoXCJ1cmxcIik7XG4gICAgICAgIGNvbnN0IGRhdGEgPSBwYXJzZUpzb25TYWZlbHkoZ2V0SW5wdXQoXCJkYXRhXCIpKTtcbiAgICAgICAgY29uc3QgaGVhZGVycyA9IHBhcnNlSnNvblNhZmVseShnZXRJbnB1dChcImhlYWRlcnNcIikpIGFzIEF4aW9zSGVhZGVycztcbiAgICAgICAgY29uc3QgcGFyYW1zID0gcGFyc2VKc29uU2FmZWx5KGdldElucHV0KFwicGFyYW1zXCIpKTtcblxuICAgICAgICBpbmZvKGBTZW5kaW5nIFBPU1QgcmVxdWVzdCB0byAke3VybH1gKTtcbiAgICAgICAgYXdhaXQgYXhpb3MucG9zdCh1cmwsIGRhdGEsIHtcbiAgICAgICAgICAgIGhlYWRlcnMsXG4gICAgICAgICAgICBwYXJhbXMsXG4gICAgICAgIH0pO1xuICAgIH0gY2F0Y2ggKGVycikge1xuICAgICAgICBpZiAoZXJyIGluc3RhbmNlb2YgRXJyb3IpIHtcbiAgICAgICAgICAgIGVycm9yKGVyci5tZXNzYWdlKTtcbiAgICAgICAgICAgIHNldEZhaWxlZChlcnIubWVzc2FnZSk7XG4gICAgICAgICAgICByZXR1cm47XG4gICAgICAgIH1cblxuICAgICAgICBzZXRGYWlsZWQoXCJBbiB1bmtub3duIGVycm9yIG9jY3VyZWRcIik7XG4gICAgfVxufVxuXG52b2lkIHJ1bigpO1xuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBQSx3Q0FBaUU7QUFDakUsa0RBQTRDO0FBRTVDLHVEQUFvRDtBQUVwRCxLQUFLLFVBQVUsR0FBRztJQUNkLElBQUksQ0FBQztRQUNELE1BQU0sR0FBRyxHQUFXLElBQUEsZUFBUSxFQUFDLEtBQUssQ0FBQyxDQUFDO1FBQ3BDLE1BQU0sSUFBSSxHQUFHLElBQUEsaUNBQWUsRUFBQyxJQUFBLGVBQVEsRUFBQyxNQUFNLENBQUMsQ0FBQyxDQUFDO1FBQy9DLE1BQU0sT0FBTyxHQUFHLElBQUEsaUNBQWUsRUFBQyxJQUFBLGVBQVEsRUFBQyxTQUFTLENBQUMsQ0FBaUIsQ0FBQztRQUNyRSxNQUFNLE1BQU0sR0FBRyxJQUFBLGlDQUFlLEVBQUMsSUFBQSxlQUFRLEVBQUMsUUFBUSxDQUFDLENBQUMsQ0FBQztRQUVuRCxJQUFBLFdBQUksRUFBQywyQkFBMkIsR0FBRyxFQUFFLENBQUMsQ0FBQztRQUN2QyxNQUFNLGVBQUssQ0FBQyxJQUFJLENBQUMsR0FBRyxFQUFFLElBQUksRUFBRTtZQUN4QixPQUFPO1lBQ1AsTUFBTTtTQUNULENBQUMsQ0FBQztJQUNQLENBQUM7SUFBQyxPQUFPLEdBQUcsRUFBRSxDQUFDO1FBQ1gsSUFBSSxHQUFHLFlBQVksS0FBSyxFQUFFLENBQUM7WUFDdkIsSUFBQSxZQUFLLEVBQUMsR0FBRyxDQUFDLE9BQU8sQ0FBQyxDQUFDO1lBQ25CLElBQUEsZ0JBQVMsRUFBQyxHQUFHLENBQUMsT0FBTyxDQUFDLENBQUM7WUFDdkIsT0FBTztRQUNYLENBQUM7UUFFRCxJQUFBLGdCQUFTLEVBQUMsMEJBQTBCLENBQUMsQ0FBQztJQUMxQyxDQUFDO0FBQ0wsQ0FBQztBQUVELEtBQUssR0FBRyxFQUFFLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBnZXRJbnB1dCwgaW5mbywgZXJyb3IsIHNldEZhaWxlZCB9IGZyb20gXCJAYWN0aW9ucy9jb3JlXCI7XG5pbXBvcnQgYXhpb3MsIHsgQXhpb3NIZWFkZXJzIH0gZnJvbSBcImF4aW9zXCI7XG5cbmltcG9ydCB7IHBhcnNlSnNvblNhZmVseSB9IGZyb20gXCIuL3BhcnNlSnNvblNhZmVseVwiO1xuXG5hc3luYyBmdW5jdGlvbiBydW4oKTogUHJvbWlzZTx2b2lkPiB7XG4gICAgdHJ5IHtcbiAgICAgICAgY29uc3QgdXJsOiBzdHJpbmcgPSBnZXRJbnB1dChcInVybFwiKTtcbiAgICAgICAgY29uc3QgZGF0YSA9IHBhcnNlSnNvblNhZmVseShnZXRJbnB1dChcImRhdGFcIikpO1xuICAgICAgICBjb25zdCBoZWFkZXJzID0gcGFyc2VKc29uU2FmZWx5KGdldElucHV0KFwiaGVhZGVyc1wiKSkgYXMgQXhpb3NIZWFkZXJzO1xuICAgICAgICBjb25zdCBwYXJhbXMgPSBwYXJzZUpzb25TYWZlbHkoZ2V0SW5wdXQoXCJwYXJhbXNcIikpO1xuXG4gICAgICAgIGluZm8oYFNlbmRpbmcgUE9TVCByZXF1ZXN0IHRvICR7dXJsfWApO1xuICAgICAgICBhd2FpdCBheGlvcy5wb3N0KHVybCwgZGF0YSwge1xuICAgICAgICAgICAgaGVhZGVycyxcbiAgICAgICAgICAgIHBhcmFtcyxcbiAgICAgICAgfSk7XG4gICAgfSBjYXRjaCAoZXJyKSB7XG4gICAgICAgIGlmIChlcnIgaW5zdGFuY2VvZiBFcnJvcikge1xuICAgICAgICAgICAgZXJyb3IoZXJyLm1lc3NhZ2UpO1xuICAgICAgICAgICAgc2V0RmFpbGVkKGVyci5tZXNzYWdlKTtcbiAgICAgICAgICAgIHJldHVybjtcbiAgICAgICAgfVxuXG4gICAgICAgIHNldEZhaWxlZChcIkFuIHVua25vd24gZXJyb3Igb2NjdXJlZFwiKTtcbiAgICB9XG59XG5cbnZvaWQgcnVuKCk7XG4iXX0=
 
 /***/ }),
 
@@ -30107,11 +30107,11 @@ module.exports = parseParams
 
 /***/ }),
 
-/***/ 2940:
+/***/ 2153:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
-// Axios v1.6.3 Copyright (c) 2023 Matt Zabriskie and contributors
+// Axios v1.6.5 Copyright (c) 2024 Matt Zabriskie and contributors
 
 
 const FormData$1 = __nccwpck_require__(6698);
@@ -31481,6 +31481,9 @@ function arrayToObject(arr) {
 function formDataToJSON(formData) {
   function buildPath(path, value, target, index) {
     let name = path[index++];
+
+    if (name === '__proto__') return true;
+
     const isNumericKey = Number.isFinite(+name);
     const isLast = index >= path.length;
     name = !name && utils$1.isArray(target) ? target.length : name;
@@ -32132,7 +32135,7 @@ function buildFullPath(baseURL, requestedURL) {
   return requestedURL;
 }
 
-const VERSION = "1.6.3";
+const VERSION = "1.6.5";
 
 function parseProtocol(url) {
   const match = /^([-+\w]{1,25})(:?\/\/|:)/.exec(url);
@@ -32763,6 +32766,10 @@ const httpAdapter = isHttpAdapterSupported && function httpAdapter(config) {
       // hotfix to support opt.all option which is required for node 20.x
       lookup = (hostname, opt, cb) => {
         _lookup(hostname, opt, (err, arg0, arg1) => {
+          if (err) {
+            return cb(err);
+          }
+
           const addresses = utils$1.isArray(arg0) ? arg0.map(addr => buildAddressEntry(addr)) : [buildAddressEntry(arg0, arg1)];
 
           opt.all ? cb(err, addresses) : cb(err, addresses[0].address, addresses[0].family);

@@ -1,5 +1,6 @@
 import { getInput, info, error, setFailed } from "@actions/core";
 import axios, { AxiosHeaders } from "axios";
+
 import { parseJsonSafely } from "./parseJsonSafely";
 
 async function run(): Promise<void> {
